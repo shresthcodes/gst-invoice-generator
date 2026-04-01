@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# GST Invoice Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-featured GST-compliant invoice management web app built with React, TypeScript, and Tailwind CSS. Designed for Indian businesses to create, manage, and export professional invoices with ease.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> Deploy link will be added after Vercel deployment
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **4 Invoice Templates** — Modern, Professional, Minimal, Compact
+- **PDF Export** — Download invoices as PDF with one click
+- **GST Calculator** — Auto CGST/SGST/IGST calculation with HSN code lookup
+- **Revenue Analytics Dashboard** — Visual charts for income tracking
+- **Expense Tracking** — Log and categorize business expenses
+- **Quotation Management** — Create and convert quotations to invoices
+- **Client Management** — Save and reuse client details
+- **Payment Tracker** — Mark invoices as paid/unpaid/partial
+- **Recurring Invoices** — Schedule automatic invoice generation
+- **Credit Notes** — Issue credit notes against invoices
+- **Import/Export** — Backup and restore invoice data
+- **Spotlight Search** — Quick search across all invoices
+- **Local Storage** — All data saved in browser, no backend needed
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend:** React 19, TypeScript, Vite
+- **Styling:** Tailwind CSS
+- **State Management:** Zustand
+- **PDF Generation:** jsPDF
+- **Charts:** Recharts
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+```bash
+# Clone the repo
+git clone https://github.com/shresthcodes/gst-invoice-generator.git
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Install dependencies
+cd gst-invoice-generator
+npm install
+
+# Start development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open `http://localhost:5173` in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Screenshots
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+> Coming soon
+
+## Author
+
+**Shresth Pandey**  
+B.Tech CSE @ GSFC University, Vadodara  
+[LinkedIn](https://linkedin.com/in/shresth-pandey-1187ba372) • [GitHub](https://github.com/shresthcodes)
