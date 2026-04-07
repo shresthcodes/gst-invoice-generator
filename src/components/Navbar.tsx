@@ -15,7 +15,7 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="no-print sticky top-0 z-40 glass border-b border-white/20 dark:border-white/5 px-6 py-4">
+    <nav className="no-print sticky top-0 z-40 bg-white/95 dark:bg-[#080812]/95 backdrop-blur-xl border-b border-gray-200/60 dark:border-white/8 px-6 py-4">
       {/* Top gradient line */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" />
 
@@ -64,7 +64,7 @@ export default function Navbar() {
 
             {moreOpen && (
               <div
-                className="absolute right-0 top-full mt-2 glass rounded-2xl shadow-2xl shadow-black/10 dark:shadow-black/40 py-2 w-56 z-50 fade-in-up"
+                className="absolute right-0 top-full mt-2 bg-white dark:bg-[#13131f] border border-gray-100 dark:border-white/10 rounded-2xl shadow-2xl shadow-black/15 dark:shadow-black/60 py-2 w-60 z-50 scale-in"
                 onMouseLeave={() => setMoreOpen(false)}
               >
                 {[
@@ -86,8 +86,8 @@ export default function Navbar() {
                     className={({ isActive }) =>
                       `flex items-center gap-3 px-4 py-2.5 mx-1 rounded-xl transition-colors ${
                         isActive
-                          ? 'bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400'
-                          : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5'
+                          ? 'bg-indigo-50 dark:bg-indigo-500/15 text-indigo-600 dark:text-indigo-400'
+                          : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/8'
                       }`
                     }
                   >
