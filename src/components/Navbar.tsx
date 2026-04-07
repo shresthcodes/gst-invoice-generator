@@ -15,7 +15,7 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="no-print sticky top-0 z-40 bg-white/95 dark:bg-[#080812]/95 backdrop-blur-xl border-b border-gray-200/60 dark:border-white/8 px-6 py-4">
+    <nav className="no-print sticky top-0 z-40 border-b px-6 py-4" style={{ background: 'var(--nav-bg)', borderColor: 'var(--nav-border)' }}>
       {/* Top gradient line */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" />
 

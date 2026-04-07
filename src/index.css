@@ -6,6 +6,15 @@
 @layer base {
   * { box-sizing: border-box; }
 
+  :root {
+    --nav-bg: #ffffff;
+    --nav-border: #e5e7eb;
+  }
+  .dark {
+    --nav-bg: #080812;
+    --nav-border: rgba(255,255,255,0.08);
+  }
+
   body {
     @apply bg-slate-50 text-gray-900 dark:bg-[#080812] dark:text-gray-100;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
