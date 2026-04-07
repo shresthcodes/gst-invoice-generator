@@ -147,12 +147,12 @@ export default function CreateInvoice({ mode = 'create' }: Props) {
             </div>
 
             {/* Template Switcher */}
-            <div className="bg-white dark:bg-white/5 p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 flex items-center justify-between">
-              <div className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+            <div className="bg-white dark:bg-white/5 p-4 rounded-2xl shadow-sm border border-gray-100 dark:border-white/5">
+              <div className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
                 <LayoutTemplate className="w-4 h-4 text-indigo-500" />
                 Template Design
               </div>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
                 {templates.map(t => (
                   <button key={t} onClick={() => update({ template: t })}
                     className={`px-3 py-1.5 rounded-xl text-xs font-semibold capitalize transition-all ${invoice.template === t ? 'bg-indigo-500 text-white shadow-md shadow-indigo-500/20' : 'bg-gray-100 dark:bg-white/5 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-white/10'}`}>
